@@ -38,6 +38,9 @@ jobs:
           gradle-version: ${{ env.GRADLE_VERSION }}
           cache-cleanup: on-success
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        
       - name: Install Android SDK packages
         shell: bash
         run: |
