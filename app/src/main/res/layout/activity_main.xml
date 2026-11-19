@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SC55G Wi‑Fi 守卫"
+            android:textColor="@color/navy"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deviceOwnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/runtimeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#E8F3F4"
+            android:padding="12dp"
+            android:text="正在读取状态…"
+            android:textColor="@color/navy" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:text="指定 Wi‑Fi" android:textStyle="bold" />
+        <EditText
+            android:id="@+id/ssidInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SSID（区分大小写）"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/securitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wi‑Fi 密码（开放网络留空）"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pinInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="管理员 PIN（首次至少 6 位；已设置则可留空）"
+            android:inputType="numberPassword"
+            android:maxLength="12"
+            android:singleLine="true" />
+
+        <Switch
+            android:id="@+id/enabledSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="启用 Wi‑Fi 守卫策略" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="保存并应用" />
+
+        <Button
+            android:id="@+id/tempWifiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="临时手动连接其他 Wi‑Fi" />
+
+        <Button
+            android:id="@+id/endTempButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="结束临时连接，返回指定 Wi‑Fi" />
+
+        <Button
+            android:id="@+id/applyNowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="立即检查并执行策略" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="说明：其他 Wi‑Fi 只在你点击“临时手动连接”后允许使用。断线、重启、临时会话结束或指定 Wi‑Fi 恢复时，App 会删除其他已保存网络并回到指定 Wi‑Fi。临时会话最长 4 小时。"
+            android:textColor="#475467"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

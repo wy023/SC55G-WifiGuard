@@ -1,0 +1,7 @@
+<resources>
+    <color name="navy">#12344D</color>
+    <color name="teal">#007C83</color>
+    <color name="surface">#F5F8FA</color>
+    <color name="warning">#B54708</color>
+    <color name="success">#067647</color>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SC55G Wi‑Fi 守卫</string>
+    <string name="admin_description">管理指定 Wi‑Fi，并在临时网络会话结束后清理其他已保存网络。</string>
+</resources>

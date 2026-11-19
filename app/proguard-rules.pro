@@ -1,0 +1,2 @@
+-keep class com.sc55g.wifiguard.admin.WifiDeviceAdminReceiver { *; }
+-keep class com.sc55g.wifiguard.service.WifiPolicyService { *; }
